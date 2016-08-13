@@ -19,3 +19,11 @@ var reverseString = function(s) {
     }
     return newString;
 };
+
+function reverseStringRecursive(str){
+  if(str.length===1){
+    return str;
+  }
+  return reverseString(str.substring(1))+str.charAt(0);
+
+};
