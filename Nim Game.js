@@ -13,5 +13,6 @@ Show Hint
  * @return {boolean}
  */
 var canWinNim = function(n) {
-    
+    var controlledTaken = 4;
+    return n%controlledTaken > 0;
 };
