@@ -15,5 +15,11 @@ The maximum depth is the number of nodes along the longest path from the root no
  * @return {number}
  */
 var maxDepth = function(root) {
-    
+    var getMax = function(a,b){
+        return a > b ? a:b;
+    }
+    if (root === null) {
+        return 0;
+    }
+    return getMax(maxDepth(root.left), maxDepth(root.right)) + 1;
 };
