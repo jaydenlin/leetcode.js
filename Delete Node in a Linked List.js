@@ -15,7 +15,7 @@ Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node wi
  * @return {void} Do not return anything, modify node in-place instead.
  */
 var deleteNode = function(node) {
-        //rmpty node
+        //empty node
         if(node === null) {
             return;
         }
