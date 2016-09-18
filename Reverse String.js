@@ -24,6 +24,6 @@ function reverseStringRecursive(str){
   if(str.length===1){
     return str;
   }
-  return reverseString(str.substring(1))+str.charAt(0);
+  return reverseStringRecursive(str.substring(1))+str.charAt(0);
 
 };
