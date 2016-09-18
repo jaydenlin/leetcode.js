@@ -23,6 +23,8 @@ var countPrimes = function(n) {
     }
     for (i = 2; i < n; i++) {
         prime = true;
+         // Loop's ending condition is j * j <= num instead of j<= sqrt(num)
+        // to avoid repeatedly calling an expensive function sqrt().
         for (j = 2; j*j <= i; j++) {
             if (i%j === 0) {
                 prime = false;
